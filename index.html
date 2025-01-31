@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>御风图南 - 演示版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(10,26,47,0.9), rgba(10,26,47,0.7)),
+                        url('https://picsum.photos/1920/1080?grayscale');
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            min-height: 100vh;
+        }
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0,163,224,0.9);
+            text-align: center;
+            z-index: 1000;
+        }
+        .hero {
+            padding-top: 80px; /* 留出导航栏空间 */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            margin: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            max-width: 800px;
+        }
+        @media (max-width: 768px) {
+            .card { padding: 1rem; margin: 1rem; }
+            .nav-bar h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <h2>御风图南科技有限公司</h2>
+    </nav>
+
+    <section class="hero">
+        <div class="card">
+            <h1>商业运载火箭解决方案</h1>
+            <p style="margin: 1rem 0; color: #00A3E0;">演示版本 - 技术验证专用</p>
+            <div style="border-top: 2px solid #00A3E0; padding: 1rem;">
+                <p>?? 适配星座：千帆星座 / GW星座</p>
+                <p>? 核心优势：快速响应 | 高可靠性 | 精准入轨</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
